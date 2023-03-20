@@ -8,7 +8,8 @@ Because it is a cluster transactions are supported.
 
 ```yml
   mongo:
-    build: .
+    image: wkof/mongodb-cluster-single-node
+    #build: .
     environment:
       MONGO_INITDB_ROOT_USERNAME: admin
       MONGO_INITDB_ROOT_PASSWORD: admin
